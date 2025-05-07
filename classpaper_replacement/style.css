@@ -1,0 +1,101 @@
+body, html {
+    background-color: mediumaquamarine;
+
+}
+
+
+#div_heading {
+    text-align: center;
+    border: 10px solid mediumvioletred;
+    background-image: url("assets/Flag_of_Ukraine.png");
+    background-size: 100% 100%;
+
+    display: block;
+}
+
+#headline_heading {
+    font-size: 60px;
+    margin-top: 10px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    text-align: center;
+    color: red;
+}
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#div_biography {
+    width: 35%;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 5px solid black;
+
+}
+
+#div_discography {
+    width: 65%;
+    background-color: transparent; /* Main background */
+    box-sizing: border-box;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for separation */
+}
+
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: lightblue;
+    border: 15px solid black;
+    border-radius: 25px;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+tbody tr {
+    border-bottom: 1px solid #333;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: darkorange;
+}
+
+th {
+    font-size: 1.1em;
+}
+
+td {
+    font-size: 1em;
+}
+
+.center {
+    text-align: center;
+}
+
+#heading_discography {
+    margin: 0 0 0 0;
+    text-align: center;
+    font-size: 30px;
+    padding: 0 0 0 0;
+
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blueviolet;
+}
