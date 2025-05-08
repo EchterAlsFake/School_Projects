@@ -1,15 +1,12 @@
 body, html {
     background-color: mediumaquamarine;
-
 }
-
 
 #div_heading {
     text-align: center;
     border: 10px solid mediumvioletred;
-    background-image: url("assets/Flag_of_Ukraine.png");
+    background-image: url("assets/Flag_of_Ukraine.svg");
     background-size: 100% 100%;
-
     display: block;
 }
 
@@ -21,26 +18,58 @@ body, html {
     text-align: center;
     color: red;
 }
-#container {
+.container {
     display: flex;
     width: 100%;
+    height: 100%
 }
+
+img {
+    aspect-ratio: 1 / 1;
+    width: 33%;
+}
+
 
 #div_biography {
-    width: 35%;
+    width: 50%;
     color: white;
-    padding: 20px;
     box-sizing: border-box;
-    border: 5px solid black;
+}
+
+#container {
+    display: flex;
+    width: 1280px;
+    height: 720px;
+
 
 }
 
+#biography_text {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    padding: 15px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    transition: all 0.3s ease-in-out;
+    border: 10px solid #1e90ff;
+}
+
+#biography_text:hover {
+    background-color: #e0f7fa;
+    transform: translateY(-5px);
+}
+
+
 #div_discography {
-    width: 65%;
-    background-color: transparent; /* Main background */
+    width: 50%;
+    background-color: transparent;
     box-sizing: border-box;
     border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for separation */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -80,6 +109,8 @@ td {
 
 .center {
     text-align: center;
+    font-size: 30px;
+    color: black;
 }
 
 #heading_discography {
@@ -98,4 +129,55 @@ a {
 a:hover {
     text-decoration: underline;
     color: blueviolet;
+}
+
+.animated_button {
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    color: #fff;
+    width: 100%;
+    background: linear-gradient(45deg, #ff0066, #ff9900, #ffcc00);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.animated_button:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(255, 0, 102, 0.5) 0%, rgba(255, 153, 0, 0) 60%);
+    border-radius: 50px;
+    z-index: -1;
+    animation: glowing 1.5s infinite alternate;
+}
+
+.animated-button:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.animated-button:active {
+    transform: scale(0.98);
+}
+
+@keyframes glowing {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
 }
