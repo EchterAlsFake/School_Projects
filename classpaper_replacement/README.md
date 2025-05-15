@@ -20,3 +20,24 @@ serves as a demonstration for my projects that I do in school. Those projects (i
 for public usage.
 
 Thanks for your understanding.
+
+
+# Project Finished! 
+I presented my project on 15th of May 2025 to my teacher and got 3
+grades for it. 
+
+1) = 1
+2) = 1
+3) = 1
+
+Basically a short explanation to the german grade system:
+- 1 = best (very good)
+- 2 = good
+- 3 = okay
+- 4 = enough (to pass, but still bad)
+- 5 = not enough (bad)
+- 6 = worst (very bad)
+
+So basically I got the best grades possible xD
+
+
