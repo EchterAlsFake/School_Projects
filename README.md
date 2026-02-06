@@ -24,8 +24,6 @@ You can get the following marks:
 - 6 (not enough) [FAIL]
 
 
-
-
 # Licensing
 All work here is generally licensed under GPLv3 if not stated otherwise. 
 

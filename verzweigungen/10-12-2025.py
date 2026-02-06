@@ -47,19 +47,29 @@ def back_two():
     t.pendown()
 
     w -= 15
-    t.goto(-q, w)
+    t.goto(random.randint(0, 400), random.randint(0, 400))
+
 
 def back_three():
     global q, w
     t.pencolor(random_color())
 
     t.penup()
-    t.goto(q, -w)
+    t.goto(q, w)
     t.pendown()
+    t.goto(-random.randint(0, 400), random.randint(0, 400))
 
-    w -= 15
-    print(f"Going to: {q}, {-w}")
-    t.goto(q, -w)
+
+
+def back_four():
+    global q, w
+    t.pencolor(random_color())
+
+    t.penup()
+    t.goto(q, w)
+    t.pendown()
+    t.goto(-random.randint(0, 400), -random.randint(0, 400))
+
 
 
 
@@ -96,6 +106,19 @@ t.goto(q, -w)
 
 for i in range(50):
     back_three()
+
+
+t.pencolor(random_color())
+t.penup()
+t.goto(q, -w)
+t.pendown()
+t.goto(q, -w)
+
+
+for i in range(50):
+    back_four()
+
+tx.exitonclick()
 
 tx.exitonclick()
 
